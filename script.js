@@ -83,7 +83,6 @@ const load2 = function () {
             </div>
             `;
       });
-      const hideButtons = document.querySelectorAll(".hide-btn");
     })
     .catch((error) => {
       console.error("Si è verificato un errore:", error);

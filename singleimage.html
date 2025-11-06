@@ -12,9 +12,40 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div
+        class="collapse"
+        id="navbarToggleExternalContent"
+        data-bs-theme="dark"
+      >
+        <div class="bg-dark p-4">
+          <h5 class="text-body-emphasis h4">About</h5>
+          <span class="text-body-secondary"
+            >Add some information about the album below, the author, or any
+            other background context. Make it a few sentences long so folks can
+            pick up some informative tidbits. Then, link them off to some social
+            networking sites or contact information.</span
+          >
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
     <main>
-      <div id="single-img-container"></div>
+      <div id="div-img"></div>
     </main>
     <footer></footer>
     <script
@@ -22,5 +53,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
+    <script src="./img.js"></script>
   </body>
 </html>
