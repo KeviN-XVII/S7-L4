@@ -20,7 +20,7 @@ const load1 = function () {
         imgContainer.innerHTML += `<div class="col-3 col-md-4 mb-4 d-flex">
                 <div class="card mb-4 shadow-sm h-100 d-flex flex-column">
                    <a href="singleimage.html?id=${photo.id}">
-                    <img src="${photo.src.medium}" class="bd-placeholder-img card-img-top" alt="${photo.photographer}" />
+                    <img src="${photo.src.medium}" class="bd-placeholder-img card-img-top object-fit-cover" style="height: 300px; width: 100%;" alt="${photo.photographer}" />
                     </a>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-muted"> <a href="singleimage.html?id=${photo.id}" class="text-decoration-none text-reset">${photo.photographer}</a></h5>
@@ -66,7 +66,7 @@ const load2 = function () {
         imgContainer2.innerHTML += `<div class="col-3 col-md-4 mb-4 d-flex">
                 <div class="card mb-4 shadow-sm h-100 d-flex flex-column">
                    <a href="singleimage.html?id=${photo.id}">
-                    <img src="${photo.src.medium}" class="bd-placeholder-img card-img-top" alt="${photo.photographer}" />
+                    <img src="${photo.src.medium}" class="bd-placeholder-img card-img-top object-fit-cover" style="height: 300px; width: 100%;" alt="${photo.photographer}" />
                     </a>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-muted"> <a href="singleimage.html?id=${photo.id}" class="text-decoration-none text-reset">${photo.photographer}</a></h5>
@@ -74,7 +74,7 @@ const load2 = function () {
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button id="hide-btn" type="button" class="btn btn-sm btn-outline-secondary">Hide</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Hide</button>
                             </div>
                              <small class="text-muted">${photo.id}</small>
                         </div>
